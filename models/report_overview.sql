@@ -1,5 +1,3 @@
-
-
 {{ config(materialized='view') }}
 
 {% set campaign_id = 66 %}
