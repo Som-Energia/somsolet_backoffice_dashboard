@@ -69,6 +69,6 @@ SELECT
         (COUNT(*) FILTER (WHERE status IN ('end installation', 'legal registration', 'legalization', 'warranty payment'))::decimal +
         COUNT(*) FILTER (WHERE status = 'discarded')::decimal) /
         COUNT(*)::decimal) * 100) AS percentage_executed_and_discarded
-FROM somsolet_project
+FROM {{ source('somsolet_db', 'somsolet_project')}}
 -- WHERE campaign_id = {{ campaign_id }}
 GROUP BY campaign_id

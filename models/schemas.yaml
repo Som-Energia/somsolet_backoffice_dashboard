@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: somsolet
+    database: somsolet_db
+    schema: public
+    tables:
+      - name: somsolet_project
+
+models:
+  - name: report_overview
+    columns:
+      - name: campaign_id
+        description: Id that identifies a campaing
+
+      - name: total_executed
+        description: Total works executed of the campaign
+
+      - name: discarted
+        description: Total works discarted of the campaign
+
+      - name: inscriptions
+        description: Total inscription of the campaign
+
+      - name: discarded_technical
+        description: Total discarted works of the campaign due to technical reasons
+
+      - name: discarded_voluntary
+        description: Total discarted works of the campaign due to voluntary reasons
+
+      - name: discarded_voluntary_before_technical_visit
+        description: Total discarted works of the campaign due to voluntary reasons before technical visit
+
+      - name: discarded_voluntary_after_technical_visit
+        description: Total discarted works of the campaign due to voluntary reasons after technical visit
+
+      - name: pending_prereport
+        description: Total discarted works of the campaign with pending pre-report
+
+      - name: pending_technical_visit
+        description: Total discarted works of the campaign with pending technical visit
+
+      - name: pending_technical_scheduled_visit
+        description: Total discarted works of the campaign with programmed technical visit
+
+      - name: total_technical_visits_done
+        description: Total technical visits of the campaign done
+
+      - name: technical_visit_report
+        description: Total of technical visit reports done
+
+      - name: offers_sent
+        description: Total of offers that a engineering has been sent
