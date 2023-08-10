@@ -1,6 +1,6 @@
 [sqlfluff]
 dialect = postgres
-templater = dbt
+templater = jinja
 runaway_limit = 10
 max_line_length = 80
 indent_unit = space
@@ -34,4 +34,4 @@ capitalisation_policy = lower
 capitalisation_policy = lower
 
 [sqlfluff:rules:ambiguous.column_references]  # Number in group by
-group_by_and_order_by_style = implicit
+group_by_and_order_by_style = explicit
