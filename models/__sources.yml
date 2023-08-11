@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: somsolet
+    database: "{{env_var('DB_NAME')}}"
+    schema: public
+    tables:
+      - name: somsolet_project
+        description: Table with all installations in somsolet
+        columns:
+          - name: status
+            description: State of the installation
+          - name: discarded_type
+            description: reason of the discard

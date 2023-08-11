@@ -1,0 +1,49 @@
+models:
+  - name: stg_projects
+    description: Project information.
+    columns:
+      - name: project_id
+        description: internal id of the project.
+      - name: project_name
+        description: Code assigned to this installation - project.
+      - name: status
+        description: State of the project.
+        tests:
+          - accepted_values:
+              values: [
+                'legal registration',
+                'discarded',
+                'preregistered',
+                'construction permit',
+                'legalization',
+                'report',
+                'technical visit',
+                'empty status',
+                'end installation',
+                'signature',
+                'pending installation date',
+                'offer',
+                'report review',
+                'registered',
+                'offer review',
+                'warranty payment',
+                'date installation set',
+                'prereport'
+              ]
+      - name: discarded_type
+        description: Reason of discart a project.
+        tests:
+          - accepted_values:
+              values: ['technical', 'voluntary', 'Not discarded']
+      - name: preregistration_date,
+        description: Date when project was preregistered
+      - name: registration_date
+        description: Date when project was registered
+      - name: date_report,
+        description: Date when project report was sent
+      - name: date_prereport
+        description: Date when preproject report was sent
+      - name: date_start_installation,
+        description: Date when the installation started
+      - name: date_legal_docs
+        description: Date when legal documentation was attached to the project
