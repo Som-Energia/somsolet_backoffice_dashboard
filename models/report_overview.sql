@@ -1,5 +1,3 @@
-{% set campaign_id = 66 %}
-
 select
     campaign_id,
     count(*) filter (
@@ -114,5 +112,4 @@ select
         / count(*)::decimal
     ) * 100) as percentage_executed_and_discarded
 from {{ source('somsolet', 'somsolet_project') }}
--- where campaign_id = {{ campaign_id }}
 group by campaign_id

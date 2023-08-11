@@ -41,7 +41,7 @@ models:
   - name: report_overview
     columns:
       - name: campaign_id
-        description: Id that identifies a campaing
+        description: Id that identifies a campaign
 
       - name: total_executed
         description: Total works executed of the campaign
