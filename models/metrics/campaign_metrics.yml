@@ -1,0 +1,16 @@
+models:
+  - name: campaign_metrics
+    description: metrics of the campaign
+    columns:
+    - name: average_days_to_start_installation
+      description: Average number of days to start the installation
+
+    - name: average_days_to_legalize_installation
+      description: Average number of days to legalize the installation
+
+    - name: percentage_executed_and_discarded
+      description: Campaign progress. (Total works executed/total works discarted)*number of registered
+      tests:
+        - dbt_utils.accepted_range:
+            min_value: 0
+            max_value: 100

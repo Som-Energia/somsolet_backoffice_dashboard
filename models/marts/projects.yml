@@ -1,0 +1,75 @@
+models:
+  - name: projects
+    description: Report overview of the project
+    columns:
+          - name: project_id
+            description: internal id of the project
+
+          - name: project_name
+            description: Code assigned to this installation - project
+
+          - name: total_executed
+            description: Total works executed of the campaign
+
+          - name: discarted
+            description: Total works discarted of the campaign
+
+          - name: inscriptions
+            description: Total inscription of the campaign
+
+          - name: discarded_technical
+            description: Total discarted works of the campaign due to technical reasons
+
+          - name: discarded_voluntary
+            description: Total discarted works of the campaign due to voluntary reasons
+
+          - name: discarded_voluntary_before_technical_visit
+            description: Total discarted works of the campaign due to voluntary reasons before technical visit
+
+          - name: discarded_voluntary_after_technical_visit
+            description: Total discarted works of the campaign due to voluntary reasons after technical visit
+
+          - name: pending_prereport
+            description: Total discarted works of the campaign with pending pre-report
+
+          - name: pending_technical_visit
+            description: Total discarted works of the campaign with pending technical visit
+
+          - name: pending_technical_scheduled_visit
+            description: Total discarted works of the campaign with programmed technical visit
+
+          - name: total_technical_visits_done
+            description: Total technical visits of the campaign done
+
+          - name: technical_visit_report
+            description: Total of technical visit reports done
+
+          - name: offers_sent
+            description: Total of offers that a engineering has been sent
+
+          - name: total_signed_contracts
+            description: to be completed
+
+          - name: signed_contracts
+            description: to be completed
+
+          - name: pending_license_response
+            description: Total contracts of the campaign with pending license response
+
+          - name: scheduled_works
+            description: Total contracts of the campaign with scheduled works
+
+          - name: works_completed
+            description: Total contracts of the campaign with completed works
+
+          - name: legalization_stage
+            description: Total contracts of the campaign in legalization stage
+
+          - name: legalization_completed
+            description: Total contracts of the campaign with legalization completed
+
+          - name: warranty_payment_done
+            description: Total contract
+
+          - name: total_executed_works
+            description: Total works of the compaing executed. Those that have a receipt certificate.
