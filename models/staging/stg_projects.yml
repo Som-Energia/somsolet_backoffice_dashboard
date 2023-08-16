@@ -30,6 +30,13 @@ models:
                 'date installation set',
                 'prereport'
               ]
+      - name: campaign_id
+        description: Campaign that belongs this project.
+        tests:
+          - not_null
+          - relationships:
+              field: campaign_id
+              to: ref('stg_campaign')
       - name: discarded_type
         description: Reason of discart a project.
         tests:

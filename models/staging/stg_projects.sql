@@ -8,6 +8,7 @@ renamed as (
         id as project_id,
         name as project_name,
         status,
+        campaign_id,
         discarded_type,
         preregistration_date,
         registration_date,

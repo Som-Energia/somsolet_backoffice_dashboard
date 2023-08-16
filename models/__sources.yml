@@ -7,8 +7,5 @@ sources:
     tables:
       - name: somsolet_project
         description: Table with all installations in somsolet
-        columns:
-          - name: status
-            description: State of the installation
-          - name: discarded_type
-            description: reason of the discard
+      - name: somsolet_campaign
+        description: Table with all campaigns in somsolet
