@@ -1,3 +1,5 @@
+-- TODO: to rethink this query
+
 with
 
 stg_projects as (

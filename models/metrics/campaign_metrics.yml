@@ -1,3 +1,5 @@
+# TODO: this should have a metrics section. To rethink how we do with our somsolet models
+
 models:
   - name: campaign_metrics
     description: metrics of the campaign
