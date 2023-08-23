@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: somsolet
+    database: "{{env_var('DB_NAME')}}"
+    schema: public
+    tables:
+      - name: somsolet_project
+        description: Table with all installations in somsolet
+      - name: somsolet_campaign
+        description: Table with all campaigns in somsolet

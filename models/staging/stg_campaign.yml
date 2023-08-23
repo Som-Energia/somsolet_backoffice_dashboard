@@ -1,0 +1,10 @@
+models:
+  - name: stg_campaign
+    description: Campaign information.
+    columns:
+      - name: campaign_id
+        description: internal id of the campaign.
+      - name: campaign_name
+        description: Name assigned to this campaign.
+      - name: active
+        description: Describe if a campaign is active or not
