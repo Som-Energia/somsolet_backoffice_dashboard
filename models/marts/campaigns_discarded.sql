@@ -6,22 +6,22 @@ select
     case
         when
             projects.status = 'discarded'
-            and projects.discarded_type = 'technical' then 'discarded_technical'
+            and projects.discarded_type = 'technical' then 'Tècnics'
         when
             projects.status = 'discarded'
-            and projects.discarded_type = 'voluntary' then 'discarded_voluntary'
+            and projects.discarded_type = 'voluntary' then 'Voluntaris'
     end as discarded_hiper_type,
     case
         when
             projects.status = 'discarded'
             and projects.discarded_type = 'voluntary'
             and projects.date_report is null
-            then 'discarded_voluntary_before_technical_visit'
+            then 'Voluntari abans visita tècnica'
         when
             projects.status = 'discarded'
             and projects.discarded_type = 'voluntary'
             and projects.date_report is not null
-            then 'discarded_voluntary_after_technical_visit'
+            then 'Voluntari després de visita tècnica'
     end as discarded_voluntary_moment
 from {{ ref('stg_projects') }} as projects
 inner join
