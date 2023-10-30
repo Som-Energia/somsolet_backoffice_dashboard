@@ -60,7 +60,8 @@ campaign_summary as (
         ))
         + count(*) filter (
             where projects.status = 'discarded'
-            and projects.discarded_type = 'technical'
+            and projects.discarded_type = 'voluntary'
+            and projects.date_report is not null
         ) as total_technical_visits_done,
         count(*) filter (
             where projects.status in ('report', 'report review')
