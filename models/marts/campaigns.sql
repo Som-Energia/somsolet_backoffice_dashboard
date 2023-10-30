@@ -76,7 +76,8 @@ campaign_summary as (
             'end installation',
             'legal registration',
             'legalization',
-            'warranty payment'
+            'warranty payment',
+            'construction permit'
         )) as total_signed_contracts,
         count(*) filter (
             where projects.status = 'signature'
